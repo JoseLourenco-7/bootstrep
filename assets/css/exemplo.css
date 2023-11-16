@@ -11,3 +11,7 @@
 
 
 }
+
+.border_{
+    border: 2px solid red;
+}
