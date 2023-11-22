@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <title>imagens</title>
+</head>
+<body>
+
+    <div class="container" >
+        <div class="alert alert-success " role="alert">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro cupiditate aliquam dicta enim, nesciunt ab illo error debitis autem culpa dolores excepturi voluptatem. Eveniet cupiditate pariatur sequi et eaque.
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary">Alert Primary</div>
+                
+            </div>
+            <div class="col">
+                <div class="alert alert-secondary">Alert secondary</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">
+                    Error Danger
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-warning">
+                    Error warning
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-info" style="text-align: center;">
+            Information!!!
+            <br>
+            <a href="https://www.youtube.com">Youtube</a>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero distinctio provident, amet omnis 
+            <button class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <button id="btn-close-all" type="button">Fechar todos os alertas</button>
+    </div>
+  
+    <script src="../assets/jquery-3.4.0.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('#btn-close-all').on('click', e => {
+                $('.alert').alert('close');
+            });
+        });
+    </script>
+</body>
+</html>
