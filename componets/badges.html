@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Hcode</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Dev Samurai <span class="badge badge-primary">badge</span></h1>
+        <h2> Dev Samurai <span class="badge badge-primary">badge</span></h2>
+        <h3> Dev Samurai <span class="badge badge-primary">badge</span></h3>
+        <h4> Dev Samurai <span class="badge badge-primary">badge</span></h4>
+        <h5> Dev Samurai <span class="badge badge-primary">badge</span></h5>
+        <h6> Dev Samurai <span class="badge badge-primary">badge</span></h6>
+        <hr>
+
+        <button type="button" id="btn-click" class="btn btn-primary">Clique <span class="badge badge-light">0</span></button>
+
+        <hr>
+
+        <button class="btn btn-primary">
+            Caixa de entrada    <span class="badge badge-light">3</span>
+        </button>
+
+        <hr>
+        <span class="badge badge-primary">1</span><span class="badge badge-dark">2</span><span class="badge badge-secondary">3</span><span class="badge badge-success">4</span><span class="badge badge-danger">5</span><span class="badge badge-warning">6</span><span class="badge badge-info">7</span><span class="badge badge-light">8</span>
+
+        <hr>
+
+        <span class="badge badge-primary" style="font-size: 15px;">ok</span>
+        <span class="badge badge-primary badge-pill-" style="font-size: 15px;">ok</span>
+
+        <hr>
+        <a href="http://" class="badge badge-success">Link com badge</a>
+
+    </div>    
+    
+    <script src="../assets/jquery-3.4.0.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js.map"></script>
+
+    <script>
+        $(function(){
+            $('#btn-click').on('click', event => $('#btn-click span').text(parseInt($('#btn-click span').text(), 10) + 1 ));
+        });
+
+    </script>
+
+  
+
+</body>
+</html>
